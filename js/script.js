@@ -11,6 +11,11 @@ var userPosition;
 surnameList.push(userSurname);
 console.log(surnameList);
 
+for (var i = 0; i < surnameList.length; i++) {
+  surnameList[i]=surnameList[i].toLowerCase();
+};
+console.log(surnameList);
+
 surnameList.sort();
 console.log(surnameList);
 
@@ -23,4 +28,5 @@ for (var i = 0; i < surnameList.length; i++) {
 
 userPosition= userPosition +1;
 
+//output
 document.getElementById("list-position").innerHTML += userPosition ;
